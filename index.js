@@ -1,13 +1,19 @@
-import { IaConnection } from './src/connectia.js';
+import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { prompt } from './index.js';
 
-//turn config.json in .gitnore for your security"
-//import { ApiKey } from "./config.json"
-async function main() {
-  const config = await import('./config.json', { assert: { type: 'json' } });
-  const ApiKey = config.ApiKey;
-  IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey);
+export async function IaConnection(modelo, ia, api) {
+
+try{
+  const genAI = new GoogleGenerativeAI(api);
+  
+  const model = genAI.getGenerativeModel({ model: modelo })
+const result = await model.generateContent(ia);
+console.log(result.response.text());
+
+  
+} catch (err){
+console.log("Error404: verify if your apiKey/InputModel is valid");
 }
 
-console.time("execution time");
-main();
-console.timeEnd("execution time");
+  
+}
