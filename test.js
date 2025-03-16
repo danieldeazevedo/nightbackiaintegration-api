@@ -1,6 +1,6 @@
-const test = require("./index.js")
-function name(){
-  
 
-console.log(test.main.prompt.toSring())
+import { main } from './index.js';
+
+export function name() {
+  console.log(main.prompt.toString());
 }
