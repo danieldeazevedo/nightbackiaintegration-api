@@ -1,7 +1,4 @@
 import { IaConnection } from 'nightback-ia-integration';
-
-
-
 //turn config.json in .gitnore for your security"
 //import { ApiKey } from "./config.json"
 async function main() {

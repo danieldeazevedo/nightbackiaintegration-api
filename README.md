@@ -1,10 +1,10 @@
 ## Using the API
 
-This API allows you to [briefly describe what your API does].
+This API allows you to have a more easyly connection with gemini api.
 
 **Installation**
 
-1. Install the necessary dependencies:
+1. Install nightback-ia-integration dependencie:
 
    ```bash
    npm install nightback-ia-integration 
