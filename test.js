@@ -1,6 +1,6 @@
 
-import { main } from './index.js';
+import { prompt } from './index.js';
 
 export function name() {
-  console.log(main.prompt.toString());
+  console.log(prompt);
 }

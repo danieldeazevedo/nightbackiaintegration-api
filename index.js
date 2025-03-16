@@ -1,10 +1,10 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { name } from './test.js';
+
+export const prompt = "Explain how AI works";
 
 async function main() {
-  const prompt = "Explain how AI works";
-  name();
+  console.log(prompt);
 }
 
 main();
