@@ -32,7 +32,8 @@ This API allows you to have a more easyly connection with gemini api.
 **How contribute**
 1. Clone this respository using
 ``` bash
-$git clone danieldeazevedo/nightback-ia-integration 
+$git clone danieldeazevedo/nightback-ia-integration
+```
 
 Modify and make some changes in code and create a pull request
 
