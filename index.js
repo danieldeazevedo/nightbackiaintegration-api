@@ -1,10 +1,12 @@
+import { IaConnection } from './src/connectia.js';
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
-
-export const prompt = "Explain how AI works";
-
+//turn config.json in .gitnore for your security"
+//import { ApiKey } from "./config.json"
 async function main() {
-  console.log(prompt);
+  const ApiKey = require('./config.json')
+  IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey);
 }
 
+console.time("execution time");
 main();
+console.timeEnd("execution time");

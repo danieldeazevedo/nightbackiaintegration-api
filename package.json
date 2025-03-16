@@ -1,5 +1,5 @@
 {
-  "name": "nodejs",
+  "name": "nightback-ia-integration",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "nightback",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
