@@ -24,9 +24,11 @@ This API allows you to [briefly describe what your API does].
    // Example:
    
    async function main() {
-   const config = await import('./config.json', { assert: { type: 'json' } });const ApiKey = config.ApiKey;IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey);
-}
-```
+   const config = await import('./config.json', { assert: { type: 'json' } });
+      const ApiKey = config.ApiKey;
+      IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey);
+   }
+
 **How contribute**
 1. Clone this respository using
 ``` bash
