@@ -4,7 +4,7 @@ import { IaConnection } from 'nightback-ia-integration';
 async function main() {
   const config = await import('./config.json', { assert: { type: 'json' } });
   const ApiKey = config.ApiKey;
-  IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey);
+  IaConnection("gemini-2.0-flash", "explique a revolução francesa", ApiKey, 1000, "você é um professor de história francesa");
 }
 
 console.time("execution time");

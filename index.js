@@ -1,19 +1,14 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-//import { prompt } from './index.js';
+import { IaConnectionText } from './IaConfigUtils/IaConnection.js'; 
 
-export async function IaConnection(modelo, ia, api) {
 
-try{
-  const genAI = new GoogleGenerativeAI(api);
-  
-  const model = genAI.getGenerativeModel({ model: modelo })
-const result = await model.generateContent(ia);
-console.log(result.response.text());
+function IaText(modelo, ia, api, maxPutTokens, training = null){
 
-  
-} catch (err){
-console.log("Error404: verify if your apiKey/InputModel is valid");
-}
-
+  IaConnectionText(modelo, ia, api, maxPutTokens, training);
   
 }
+
+/* Finish that
+function IaImg(context){
+
+  
+} */
